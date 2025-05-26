@@ -16,16 +16,14 @@ Encapsulation is the process of **hiding an object's internal state** and requir
 - Makes fields `private` and provides `public` methods (getters/setters) to access or update them.
 - Helps in protecting data and maintaining object integrity.
 
-#### 🔍 Example (C++):
+### 🛡️ Abstraction
 
-```cpp
-class Car {
-  private:
-    int speed; // Hidden from outside
+Abstraction is the concept of **simplifying complex systems** by modeling classes based on the essential properties and behaviors an object should have, while hiding unnecessary details.
 
-  public:
-    void setSpeed(int s) { speed = s; }
-    int getSpeed() { return speed; }
-};
+#### ✅ Key Points:
 
-```
+- Focuses on **what an object does** rather than how it does it.
+- Allows you to define a class with abstract methods that must be implemented by derived classes.
+- Helps in reducing complexity by hiding implementation details.
+
+#### 🔍 Example (c++):
