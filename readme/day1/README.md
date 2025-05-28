@@ -6,7 +6,7 @@ This section provides a recap of Object-Oriented Programming (OOP) concepts, spe
 
 ---
 
-### 🛡️ Encapsulation
+### 🔒 Encapsulation
 
 Encapsulation is the process of **hiding an object's internal state** and requiring all interaction to be performed through an object's methods.
 
@@ -15,6 +15,25 @@ Encapsulation is the process of **hiding an object's internal state** and requir
 - Wraps **data (variables)** and **methods (functions)** inside a class.
 - Makes fields `private` and provides `public` methods (getters/setters) to access or update them.
 - Helps in protecting data and maintaining object integrity.
+
+Encapsulation is a core principle of OOP that restricts direct access to an object's data and only exposes what’s necessary through a controlled interface (like getters and setters).
+
+Here’s a quick summary of what proper encapsulation looks like:
+
+| Concept          | What to Ensure                                               |
+| ---------------- | ------------------------------------------------------------ |
+| `private` data   | ✅ Prevents external modification                            |
+| Getters/Setters  | ✅ Use them instead of direct access                         |
+| Logic in setters | ✅ Add checks before modifying values                        |
+| Clean interface  | ✅ Users of the class don’t need to know how it works inside |
+
+### ✅ Why Encapsulation Matters
+
+- Keeps data safe and consistent.
+- Makes code easier to maintain and debug.
+- Allows internal changes without affecting other parts of the code.
+
+> Example: `car.setSpeed(-100)` can be safely blocked inside the setter method instead of letting `speed = -100` directly.
 
 ### 🛡️ Abstraction
 
