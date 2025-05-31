@@ -1,0 +1,85 @@
+We will desigin a UML diagram for a simplified version of Netflix.
+
+
+User:
+    -userName:string
+    -email:string
+    -password:string
+    -isActive:boolean
+    -watchHistory:WatchHistory[]
+
+    +register():void
+    +login():boolean
+    +logout():void
+    +updateProfile():void
+    +viewWatchHistory():WatchHistory[]
+    +addToWatchHistory(movie:Movie):void
+    +removeFromWatchHistory(movie:Movie):void
+    +getRecommendations():Movie[]
+    +searchMovies(query:string):Movie[]
+    +subscribe(plan:SubscriptionPlan):void
+    +unsubscribe():void
+
+
+
+what can all possible thing exists in movie and tv seris??
+    Movie and Tv seris can have the mostly same attributes and methods, but they can also have some unique features. 
+
+Content:
+    -title:string
+    -description:string
+    -releaseDate:Date
+    -genre:string[]
+    -rating:number
+    -cast:CastMember[]
+    -director:string
+    -producer:string
+    -trailerUrl:string
+    -posterUrl:string
+
+
+    +play():void
+    +pause():void
+    +stop():void
+    +addToFavorites():void
+    +removeFromFavorites():void
+    +getDetails():string
+    +getReviews():Review[]
+
+
+//Movie and Tv series will inherits from Content
+
+Movie:
+    -duration:number 
+    
+
+TvSeries:
+   -duration:string
+    -numberOfEpisode:number
+    -numberOfSeason:number
+
+
+
+Review :
+    -user:User
+    -content:Content
+    -rating:number
+    -comment:string
+    -date:Date
+
+    +addReview():void
+    +editReview():void
+    +deleteReview():void
+    +getReviews():Review[]
+
+
+Playlist:
+    -name:string
+    -description:string
+    -movies:Movie[]
+    -tvSeries:TvSeries[]
+
+    +addContent(content:Content):void
+    +removeContent(content:Content):void
+    +getContent():Content[]
+    +getDetails():string

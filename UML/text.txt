@@ -1,3 +1,48 @@
 1->what is UML?
     UML (Unified Modeling Language) is a visual way to design and understand software systems.
     Just like a blueprint for a building.
+
+
+2-> Common UML Diagrams
+    - Class Diagram: Shows classes and their relationships.
+    - Sequence Diagram: Illustrates how objects interact over time.
+    - Use Case Diagram: Represents user interactions with the system.
+    - Activity Diagram: Describes workflows and processes.
+    - State Diagram: Shows states of an object and transitions between them.
+    - Component Diagram: Displays system components and their dependencies.
+    - Deployment Diagram: Visualizes hardware and software deployment in a system.
+3-> Why Use UML?
+    - Standardized: Provides a common language for developers.
+    - Visual: Helps in understanding complex systems.
+    - Documentation: Serves as documentation for the system design.
+    - Communication: Facilitates communication among team members and stakeholders.
+    - Design: Aids in designing software architecture before coding.
+
+
+
+4-> Class  Diagram
+    - Represents classes, attributes, methods, and relationships.
+    - Key elements:
+        - Class: A blueprint for objects.
+        - Attribute: Data stored in a class.
+        - Method: Functions defined in a class.
+        - Relationship: Connections between classes (e.g., inheritance, association).
+
+A) association
+    - A relationship where one class uses or interacts with another.
+    - Example: A `Customer` class may have an association with an `Order` class.
+B) inheritance
+    - A relationship where one class (subclass) inherits attributes and methods from another class (superclass).
+    - Example: A `Dog` class can inherit from an `Animal` class.
+C) aggregation
+    - Whole Part but part can exist independently.
+    - Example: A `Library` class may have an aggregation relationship with a `Book` class, as books can exist independently of the library.
+D) composition
+    - Whole Part but part cannot exist independently.
+    - Example: A `Car` class may have a composition relationship with an `Engine` class, as the engine cannot exist without the car.
+E) dependency
+    - A relationship where one class depends on another for its functionality.
+    - Example: A `Payment` class may depend on a `Bank` class to process transactions
+F) realization
+    - A relationship where a class implements an interface.
+    - Example: A `PaymentProcessor` class may realize a `PaymentInterface` to define how payments are processed.
